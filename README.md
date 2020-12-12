@@ -25,3 +25,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## What I learnt.
+
+1. Validar formularios
+2. Tokens
+3. LocalStorage
+4. Borrar tokens
+5. Caducidad de tokens
+6. Creación de usuarios
+7. Posteos
+8. Firebase REST API
+
+
+
+**This project was created by godxvincent.**
+
+![Godxvincent](DFFOO_Vincent_Valentine.png)
