@@ -13,6 +13,7 @@ import { AuthService } from '../../services/auth.service';
 export class RegistroComponent implements OnInit {
 
   usuario: UsuarioModel;
+  recordarUsuario = false;
 
   constructor( private authService: AuthService, private router: Router) { }
 
@@ -34,6 +35,11 @@ export class RegistroComponent implements OnInit {
         // confirmButtonText: 'Cool',
       });
       Swal.showLoading();
+
+      if ( this.recordarUsuario ) {
+        localStorage.setItem('email', this.usuario.email );
+      }
+
       this.authService.nuevoUsuario(this.usuario).subscribe( respuestaFireBase => {
         console.log(respuestaFireBase);
         Swal.close();
